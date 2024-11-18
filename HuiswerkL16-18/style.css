@@ -1,0 +1,93 @@
+body
+{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+header
+{
+    background-image: url(afbeeldingen/melle.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    padding: 50px 20px
+}
+header h1
+{
+    font-size: 2em;
+    margin: 0;
+}
+footer
+{
+   clear: right;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+main
+{
+    padding: 20px;
+}
+.inhoud
+{
+    display: flex;
+}
+.feitjes
+{
+    flex: 2;
+    padding: 10px;
+}
+.feitjes ul 
+{
+    list-style: none;
+    padding: 0;
+}
+.feitjes li 
+{
+    margin-bottom: 10px;
+}
+.toeristische-attractie
+{
+    flex: 9;
+    background-color: skyblue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.toeristische-attractie h3 
+{
+    margin-top: 0;
+}
+  
+.toeristische-attractie img 
+{
+    float: right;
+    max-width: 10em;
+}
+  
+
+@media only screen and (min-width: 768px) 
+{
+    header h1 
+    {
+      font-size: 3em;
+    }
+  
+    .inhoud 
+    {
+      display: grid;
+      grid-template-columns: 2fr 9fr;
+      gap: 20px;
+    }
+  
+    .feitjes, .toeristische-attractie 
+    {
+      padding: 20px;
+    }
+}
